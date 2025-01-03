@@ -1,0 +1,5 @@
+fdh_views:
+  path: './symlink_xdr_ext_data_view_definition.json'       # Update with the actual path to the FDH views JSON file
+  print_to_csv: true                     # Option to print the DataFrame to a CSV file
+  print_fdh_frame: false                 # Option to print the DataFrame to the console
+  summarize_to_json: true
