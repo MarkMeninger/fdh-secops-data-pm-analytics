@@ -1,0 +1,2380 @@
+{
+    "fdh_summary": {
+        "fdh_event_types": [
+            "dns_activity",
+            "file_activity",
+            "network_activity",
+            "process_activity",
+            "scheduled_task_activity",
+            "service_activity",
+            "url_activity",
+            "account_activity",
+            "authentication_activity",
+            "runtime_activity"
+        ],
+        "number_of_attributes": {
+            "dns_activity": 24,
+            "file_activity": 43,
+            "network_activity": 32,
+            "process_activity": 50,
+            "scheduled_task_activity": 25,
+            "service_activity": 34,
+            "url_activity": 24,
+            "account_activity": 48,
+            "authentication_activity": 53,
+            "runtime_activity": 65
+        }
+    },
+    "fdh_attributes": [
+        {
+            "domain_name": {
+                "unique": true,
+                "found_in_event_types": [
+                    "dns_activity"
+                ],
+                "no_of_unique_instances": 1,
+                "type": "varchar"
+            }
+        },
+        {
+            "subject": {
+                "unique": true,
+                "found_in_event_types": [
+                    "file_activity"
+                ],
+                "no_of_unique_instances": 1,
+                "type": "varchar"
+            }
+        },
+        {
+            "last_write_time": {
+                "unique": true,
+                "found_in_event_types": [
+                    "file_activity"
+                ],
+                "no_of_unique_instances": 1,
+                "type": "bigint"
+            }
+        },
+        {
+            "target_file": {
+                "unique": true,
+                "found_in_event_types": [
+                    "file_activity"
+                ],
+                "no_of_unique_instances": 1,
+                "type": "varchar"
+            }
+        },
+        {
+            "last_access_time": {
+                "unique": true,
+                "found_in_event_types": [
+                    "file_activity"
+                ],
+                "no_of_unique_instances": 1,
+                "type": "bigint"
+            }
+        },
+        {
+            "file_id": {
+                "unique": true,
+                "found_in_event_types": [
+                    "file_activity"
+                ],
+                "no_of_unique_instances": 1,
+                "type": "varchar"
+            }
+        },
+        {
+            "target_file_extension": {
+                "unique": true,
+                "found_in_event_types": [
+                    "file_activity"
+                ],
+                "no_of_unique_instances": 1,
+                "type": "varchar"
+            }
+        },
+        {
+            "file_type_name": {
+                "unique": true,
+                "found_in_event_types": [
+                    "file_activity"
+                ],
+                "no_of_unique_instances": 1,
+                "type": "varchar"
+            }
+        },
+        {
+            "file_extension": {
+                "unique": true,
+                "found_in_event_types": [
+                    "file_activity"
+                ],
+                "no_of_unique_instances": 1,
+                "type": "varchar"
+            }
+        },
+        {
+            "file_type": {
+                "unique": true,
+                "found_in_event_types": [
+                    "file_activity"
+                ],
+                "no_of_unique_instances": 1,
+                "type": "int"
+            }
+        },
+        {
+            "change_time": {
+                "unique": true,
+                "found_in_event_types": [
+                    "file_activity"
+                ],
+                "no_of_unique_instances": 1,
+                "type": "bigint"
+            }
+        },
+        {
+            "path_type_name": {
+                "unique": true,
+                "found_in_event_types": [
+                    "file_activity"
+                ],
+                "no_of_unique_instances": 1,
+                "type": "varchar"
+            }
+        },
+        {
+            "file_attributes": {
+                "unique": true,
+                "found_in_event_types": [
+                    "file_activity"
+                ],
+                "no_of_unique_instances": 1,
+                "type": "int"
+            }
+        },
+        {
+            "number_of_hard_links": {
+                "unique": true,
+                "found_in_event_types": [
+                    "file_activity"
+                ],
+                "no_of_unique_instances": 1,
+                "type": "int"
+            }
+        },
+        {
+            "creation_time": {
+                "unique": true,
+                "found_in_event_types": [
+                    "file_activity"
+                ],
+                "no_of_unique_instances": 1,
+                "type": "bigint"
+            }
+        },
+        {
+            "target_path": {
+                "unique": true,
+                "found_in_event_types": [
+                    "file_activity"
+                ],
+                "no_of_unique_instances": 1,
+                "type": "varchar"
+            }
+        },
+        {
+            "path_type": {
+                "unique": true,
+                "found_in_event_types": [
+                    "file_activity"
+                ],
+                "no_of_unique_instances": 1,
+                "type": "int"
+            }
+        },
+        {
+            "protocol_name": {
+                "unique": true,
+                "found_in_event_types": [
+                    "network_activity"
+                ],
+                "no_of_unique_instances": 1,
+                "type": "varchar"
+            }
+        },
+        {
+            "bytes_received": {
+                "unique": true,
+                "found_in_event_types": [
+                    "network_activity"
+                ],
+                "no_of_unique_instances": 1,
+                "type": "bigint"
+            }
+        },
+        {
+            "address_type_name": {
+                "unique": true,
+                "found_in_event_types": [
+                    "network_activity"
+                ],
+                "no_of_unique_instances": 1,
+                "type": "varchar"
+            }
+        },
+        {
+            "bytes_sent": {
+                "unique": true,
+                "found_in_event_types": [
+                    "network_activity"
+                ],
+                "no_of_unique_instances": 1,
+                "type": "bigint"
+            }
+        },
+        {
+            "end_time": {
+                "unique": true,
+                "found_in_event_types": [
+                    "network_activity"
+                ],
+                "no_of_unique_instances": 1,
+                "type": "bigint"
+            }
+        },
+        {
+            "parent": {
+                "unique": true,
+                "found_in_event_types": [
+                    "process_activity"
+                ],
+                "no_of_unique_instances": 1,
+                "type": "bigint"
+            }
+        },
+        {
+            "parent_start_time": {
+                "unique": true,
+                "found_in_event_types": [
+                    "process_activity"
+                ],
+                "no_of_unique_instances": 1,
+                "type": "bigint"
+            }
+        },
+        {
+            "cmdline": {
+                "unique": true,
+                "found_in_event_types": [
+                    "process_activity"
+                ],
+                "no_of_unique_instances": 1,
+                "type": "varchar"
+            }
+        },
+        {
+            "parent_cmdline": {
+                "unique": true,
+                "found_in_event_types": [
+                    "process_activity"
+                ],
+                "no_of_unique_instances": 1,
+                "type": "varchar"
+            }
+        },
+        {
+            "pua_score": {
+                "unique": true,
+                "found_in_event_types": [
+                    "process_activity"
+                ],
+                "no_of_unique_instances": 1,
+                "type": "int"
+            }
+        },
+        {
+            "starting_integrity_level": {
+                "unique": true,
+                "found_in_event_types": [
+                    "process_activity"
+                ],
+                "no_of_unique_instances": 1,
+                "type": "int"
+            }
+        },
+        {
+            "company_name": {
+                "unique": true,
+                "found_in_event_types": [
+                    "process_activity"
+                ],
+                "no_of_unique_instances": 1,
+                "type": "varchar"
+            }
+        },
+        {
+            "sha1": {
+                "unique": true,
+                "found_in_event_types": [
+                    "process_activity"
+                ],
+                "no_of_unique_instances": 1,
+                "type": "varchar"
+            }
+        },
+        {
+            "starting_integrity_level_name": {
+                "unique": true,
+                "found_in_event_types": [
+                    "process_activity"
+                ],
+                "no_of_unique_instances": 1,
+                "type": "varchar"
+            }
+        },
+        {
+            "product_name": {
+                "unique": true,
+                "found_in_event_types": [
+                    "process_activity"
+                ],
+                "no_of_unique_instances": 1,
+                "type": "varchar"
+            }
+        },
+        {
+            "ml_score": {
+                "unique": true,
+                "found_in_event_types": [
+                    "process_activity"
+                ],
+                "no_of_unique_instances": 1,
+                "type": "int"
+            }
+        },
+        {
+            "file_version": {
+                "unique": true,
+                "found_in_event_types": [
+                    "process_activity"
+                ],
+                "no_of_unique_instances": 1,
+                "type": "varchar"
+            }
+        },
+        {
+            "is_process_file_signed": {
+                "unique": true,
+                "found_in_event_types": [
+                    "process_activity"
+                ],
+                "no_of_unique_instances": 1,
+                "type": "varchar"
+            }
+        },
+        {
+            "parent_path": {
+                "unique": true,
+                "found_in_event_types": [
+                    "process_activity"
+                ],
+                "no_of_unique_instances": 1,
+                "type": "varchar"
+            }
+        },
+        {
+            "global_rep": {
+                "unique": true,
+                "found_in_event_types": [
+                    "process_activity"
+                ],
+                "no_of_unique_instances": 1,
+                "type": "int"
+            }
+        },
+        {
+            "parent_name": {
+                "unique": true,
+                "found_in_event_types": [
+                    "process_activity"
+                ],
+                "no_of_unique_instances": 1,
+                "type": "varchar"
+            }
+        },
+        {
+            "file_description": {
+                "unique": true,
+                "found_in_event_types": [
+                    "process_activity"
+                ],
+                "no_of_unique_instances": 1,
+                "type": "varchar"
+            }
+        },
+        {
+            "local_rep": {
+                "unique": true,
+                "found_in_event_types": [
+                    "process_activity"
+                ],
+                "no_of_unique_instances": 1,
+                "type": "int"
+            }
+        },
+        {
+            "original_filename": {
+                "unique": true,
+                "found_in_event_types": [
+                    "process_activity"
+                ],
+                "no_of_unique_instances": 1,
+                "type": "varchar"
+            }
+        },
+        {
+            "pid": {
+                "unique": true,
+                "found_in_event_types": [
+                    "process_activity"
+                ],
+                "no_of_unique_instances": 1,
+                "type": "bigint"
+            }
+        },
+        {
+            "name": {
+                "unique": true,
+                "found_in_event_types": [
+                    "process_activity"
+                ],
+                "no_of_unique_instances": 1,
+                "type": "varchar"
+            }
+        },
+        {
+            "local_rep_data": {
+                "unique": true,
+                "found_in_event_types": [
+                    "process_activity"
+                ],
+                "no_of_unique_instances": 1,
+                "type": "varchar"
+            }
+        },
+        {
+            "task_content": {
+                "unique": true,
+                "found_in_event_types": [
+                    "scheduled_task_activity"
+                ],
+                "no_of_unique_instances": 1,
+                "type": "varchar"
+            }
+        },
+        {
+            "service_path": {
+                "unique": true,
+                "found_in_event_types": [
+                    "service_activity"
+                ],
+                "no_of_unique_instances": 1,
+                "type": "varchar"
+            }
+        },
+        {
+            "new_service_value": {
+                "unique": true,
+                "found_in_event_types": [
+                    "service_activity"
+                ],
+                "no_of_unique_instances": 1,
+                "type": "varchar"
+            }
+        },
+        {
+            "service_type_enum": {
+                "unique": true,
+                "found_in_event_types": [
+                    "service_activity"
+                ],
+                "no_of_unique_instances": 1,
+                "type": "int"
+            }
+        },
+        {
+            "service_account": {
+                "unique": true,
+                "found_in_event_types": [
+                    "service_activity"
+                ],
+                "no_of_unique_instances": 1,
+                "type": "varchar"
+            }
+        },
+        {
+            "service_start_type_name": {
+                "unique": true,
+                "found_in_event_types": [
+                    "service_activity"
+                ],
+                "no_of_unique_instances": 1,
+                "type": "varchar"
+            }
+        },
+        {
+            "service_start_type": {
+                "unique": true,
+                "found_in_event_types": [
+                    "service_activity"
+                ],
+                "no_of_unique_instances": 1,
+                "type": "int"
+            }
+        },
+        {
+            "service_type_name": {
+                "unique": true,
+                "found_in_event_types": [
+                    "service_activity"
+                ],
+                "no_of_unique_instances": 1,
+                "type": "varchar"
+            }
+        },
+        {
+            "url": {
+                "unique": true,
+                "found_in_event_types": [
+                    "url_activity"
+                ],
+                "no_of_unique_instances": 1,
+                "type": "varchar"
+            }
+        },
+        {
+            "user_workstations": {
+                "unique": true,
+                "found_in_event_types": [
+                    "account_activity"
+                ],
+                "no_of_unique_instances": 1,
+                "type": "varchar"
+            }
+        },
+        {
+            "profile_path": {
+                "unique": true,
+                "found_in_event_types": [
+                    "account_activity"
+                ],
+                "no_of_unique_instances": 1,
+                "type": "varchar"
+            }
+        },
+        {
+            "user_logon_id": {
+                "unique": true,
+                "found_in_event_types": [
+                    "account_activity"
+                ],
+                "no_of_unique_instances": 1,
+                "type": "varchar"
+            }
+        },
+        {
+            "sid_history": {
+                "unique": true,
+                "found_in_event_types": [
+                    "account_activity"
+                ],
+                "no_of_unique_instances": 1,
+                "type": "varchar"
+            }
+        },
+        {
+            "home_path": {
+                "unique": true,
+                "found_in_event_types": [
+                    "account_activity"
+                ],
+                "no_of_unique_instances": 1,
+                "type": "varchar"
+            }
+        },
+        {
+            "user_parameters": {
+                "unique": true,
+                "found_in_event_types": [
+                    "account_activity"
+                ],
+                "no_of_unique_instances": 1,
+                "type": "varchar"
+            }
+        },
+        {
+            "primary_group_id": {
+                "unique": true,
+                "found_in_event_types": [
+                    "account_activity"
+                ],
+                "no_of_unique_instances": 1,
+                "type": "varchar"
+            }
+        },
+        {
+            "home_directory": {
+                "unique": true,
+                "found_in_event_types": [
+                    "account_activity"
+                ],
+                "no_of_unique_instances": 1,
+                "type": "varchar"
+            }
+        },
+        {
+            "user_principal_name": {
+                "unique": true,
+                "found_in_event_types": [
+                    "account_activity"
+                ],
+                "no_of_unique_instances": 1,
+                "type": "varchar"
+            }
+        },
+        {
+            "allowed_to_delegate_to": {
+                "unique": true,
+                "found_in_event_types": [
+                    "account_activity"
+                ],
+                "no_of_unique_instances": 1,
+                "type": "varchar"
+            }
+        },
+        {
+            "privilege_list": {
+                "unique": true,
+                "found_in_event_types": [
+                    "account_activity"
+                ],
+                "no_of_unique_instances": 1,
+                "type": "varchar"
+            }
+        },
+        {
+            "uac": {
+                "unique": true,
+                "found_in_event_types": [
+                    "account_activity"
+                ],
+                "no_of_unique_instances": 1,
+                "type": "varchar"
+            }
+        },
+        {
+            "account_expires": {
+                "unique": true,
+                "found_in_event_types": [
+                    "account_activity"
+                ],
+                "no_of_unique_instances": 1,
+                "type": "varchar"
+            }
+        },
+        {
+            "script_path": {
+                "unique": true,
+                "found_in_event_types": [
+                    "account_activity"
+                ],
+                "no_of_unique_instances": 1,
+                "type": "varchar"
+            }
+        },
+        {
+            "new_uac_value": {
+                "unique": true,
+                "found_in_event_types": [
+                    "account_activity"
+                ],
+                "no_of_unique_instances": 1,
+                "type": "varchar"
+            }
+        },
+        {
+            "password_last_set": {
+                "unique": true,
+                "found_in_event_types": [
+                    "account_activity"
+                ],
+                "no_of_unique_instances": 1,
+                "type": "varchar"
+            }
+        },
+        {
+            "display_name": {
+                "unique": true,
+                "found_in_event_types": [
+                    "account_activity"
+                ],
+                "no_of_unique_instances": 1,
+                "type": "varchar"
+            }
+        },
+        {
+            "old_uac_value": {
+                "unique": true,
+                "found_in_event_types": [
+                    "account_activity"
+                ],
+                "no_of_unique_instances": 1,
+                "type": "varchar"
+            }
+        },
+        {
+            "sam_account_name": {
+                "unique": true,
+                "found_in_event_types": [
+                    "account_activity"
+                ],
+                "no_of_unique_instances": 1,
+                "type": "varchar"
+            }
+        },
+        {
+            "virtual_account": {
+                "unique": true,
+                "found_in_event_types": [
+                    "authentication_activity"
+                ],
+                "no_of_unique_instances": 1,
+                "type": "varchar"
+            }
+        },
+        {
+            "logon_process": {
+                "unique": true,
+                "found_in_event_types": [
+                    "authentication_activity"
+                ],
+                "no_of_unique_instances": 1,
+                "type": "varchar"
+            }
+        },
+        {
+            "workstation_name": {
+                "unique": true,
+                "found_in_event_types": [
+                    "authentication_activity"
+                ],
+                "no_of_unique_instances": 1,
+                "type": "varchar"
+            }
+        },
+        {
+            "logon_guid": {
+                "unique": true,
+                "found_in_event_types": [
+                    "authentication_activity"
+                ],
+                "no_of_unique_instances": 1,
+                "type": "varchar"
+            }
+        },
+        {
+            "target_outbound_username": {
+                "unique": true,
+                "found_in_event_types": [
+                    "authentication_activity"
+                ],
+                "no_of_unique_instances": 1,
+                "type": "varchar"
+            }
+        },
+        {
+            "sub_status": {
+                "unique": true,
+                "found_in_event_types": [
+                    "authentication_activity"
+                ],
+                "no_of_unique_instances": 1,
+                "type": "varchar"
+            }
+        },
+        {
+            "key_length": {
+                "unique": true,
+                "found_in_event_types": [
+                    "authentication_activity"
+                ],
+                "no_of_unique_instances": 1,
+                "type": "int"
+            }
+        },
+        {
+            "restricted_admin_mode": {
+                "unique": true,
+                "found_in_event_types": [
+                    "authentication_activity"
+                ],
+                "no_of_unique_instances": 1,
+                "type": "varchar"
+            }
+        },
+        {
+            "authentication_package": {
+                "unique": true,
+                "found_in_event_types": [
+                    "authentication_activity"
+                ],
+                "no_of_unique_instances": 1,
+                "type": "varchar"
+            }
+        },
+        {
+            "remote_port": {
+                "unique": true,
+                "found_in_event_types": [
+                    "authentication_activity"
+                ],
+                "no_of_unique_instances": 1,
+                "type": "int"
+            }
+        },
+        {
+            "lm_package": {
+                "unique": true,
+                "found_in_event_types": [
+                    "authentication_activity"
+                ],
+                "no_of_unique_instances": 1,
+                "type": "varchar"
+            }
+        },
+        {
+            "transmitted_services": {
+                "unique": true,
+                "found_in_event_types": [
+                    "authentication_activity"
+                ],
+                "no_of_unique_instances": 1,
+                "type": "varchar"
+            }
+        },
+        {
+            "remote_address": {
+                "unique": true,
+                "found_in_event_types": [
+                    "authentication_activity"
+                ],
+                "no_of_unique_instances": 1,
+                "type": "varchar"
+            }
+        },
+        {
+            "status": {
+                "unique": true,
+                "found_in_event_types": [
+                    "authentication_activity"
+                ],
+                "no_of_unique_instances": 1,
+                "type": "varchar"
+            }
+        },
+        {
+            "failure_reason": {
+                "unique": true,
+                "found_in_event_types": [
+                    "authentication_activity"
+                ],
+                "no_of_unique_instances": 1,
+                "type": "varchar"
+            }
+        },
+        {
+            "impersonation_level": {
+                "unique": true,
+                "found_in_event_types": [
+                    "authentication_activity"
+                ],
+                "no_of_unique_instances": 1,
+                "type": "varchar"
+            }
+        },
+        {
+            "logon_type": {
+                "unique": true,
+                "found_in_event_types": [
+                    "authentication_activity"
+                ],
+                "no_of_unique_instances": 1,
+                "type": "int"
+            }
+        },
+        {
+            "logon_id": {
+                "unique": true,
+                "found_in_event_types": [
+                    "authentication_activity"
+                ],
+                "no_of_unique_instances": 1,
+                "type": "varchar"
+            }
+        },
+        {
+            "elevated_token": {
+                "unique": true,
+                "found_in_event_types": [
+                    "authentication_activity"
+                ],
+                "no_of_unique_instances": 1,
+                "type": "varchar"
+            }
+        },
+        {
+            "executing_sophos_pid": {
+                "unique": true,
+                "found_in_event_types": [
+                    "authentication_activity"
+                ],
+                "no_of_unique_instances": 1,
+                "type": "varchar"
+            }
+        },
+        {
+            "target_linked_logon_id": {
+                "unique": true,
+                "found_in_event_types": [
+                    "authentication_activity"
+                ],
+                "no_of_unique_instances": 1,
+                "type": "varchar"
+            }
+        },
+        {
+            "target_outbound_domain": {
+                "unique": true,
+                "found_in_event_types": [
+                    "authentication_activity"
+                ],
+                "no_of_unique_instances": 1,
+                "type": "varchar"
+            }
+        },
+        {
+            "target_logon_id": {
+                "unique": true,
+                "found_in_event_types": [
+                    "authentication_activity"
+                ],
+                "no_of_unique_instances": 1,
+                "type": "varchar"
+            }
+        },
+        {
+            "technique_value": {
+                "unique": true,
+                "found_in_event_types": [
+                    "runtime_activity"
+                ],
+                "no_of_unique_instances": 1,
+                "type": "varchar"
+            }
+        },
+        {
+            "account_sid": {
+                "unique": true,
+                "found_in_event_types": [
+                    "runtime_activity"
+                ],
+                "no_of_unique_instances": 1,
+                "type": "varchar"
+            }
+        },
+        {
+            "technique_summary": {
+                "unique": true,
+                "found_in_event_types": [
+                    "runtime_activity"
+                ],
+                "no_of_unique_instances": 1,
+                "type": "varchar"
+            }
+        },
+        {
+            "reg_value_name": {
+                "unique": true,
+                "found_in_event_types": [
+                    "runtime_activity"
+                ],
+                "no_of_unique_instances": 1,
+                "type": "varchar"
+            }
+        },
+        {
+            "process_original_name": {
+                "unique": true,
+                "found_in_event_types": [
+                    "runtime_activity"
+                ],
+                "no_of_unique_instances": 1,
+                "type": "varchar"
+            }
+        },
+        {
+            "reg_value_data": {
+                "unique": true,
+                "found_in_event_types": [
+                    "runtime_activity"
+                ],
+                "no_of_unique_instances": 1,
+                "type": "varchar"
+            }
+        },
+        {
+            "file_download_url": {
+                "unique": true,
+                "found_in_event_types": [
+                    "runtime_activity"
+                ],
+                "no_of_unique_instances": 1,
+                "type": "varchar"
+            }
+        },
+        {
+            "parent_process_name": {
+                "unique": true,
+                "found_in_event_types": [
+                    "runtime_activity"
+                ],
+                "no_of_unique_instances": 1,
+                "type": "varchar"
+            }
+        },
+        {
+            "reg_path": {
+                "unique": true,
+                "found_in_event_types": [
+                    "runtime_activity"
+                ],
+                "no_of_unique_instances": 1,
+                "type": "varchar"
+            }
+        },
+        {
+            "target_process_sha256": {
+                "unique": true,
+                "found_in_event_types": [
+                    "runtime_activity"
+                ],
+                "no_of_unique_instances": 1,
+                "type": "varchar"
+            }
+        },
+        {
+            "event_data": {
+                "unique": true,
+                "found_in_event_types": [
+                    "runtime_activity"
+                ],
+                "no_of_unique_instances": 1,
+                "type": "varchar"
+            }
+        },
+        {
+            "parent_process_path": {
+                "unique": true,
+                "found_in_event_types": [
+                    "runtime_activity"
+                ],
+                "no_of_unique_instances": 1,
+                "type": "varchar"
+            }
+        },
+        {
+            "file_sha256": {
+                "unique": true,
+                "found_in_event_types": [
+                    "runtime_activity"
+                ],
+                "no_of_unique_instances": 1,
+                "type": "varchar"
+            }
+        },
+        {
+            "account_name": {
+                "unique": true,
+                "found_in_event_types": [
+                    "runtime_activity"
+                ],
+                "no_of_unique_instances": 1,
+                "type": "varchar"
+            }
+        },
+        {
+            "process_user_sid": {
+                "unique": true,
+                "found_in_event_types": [
+                    "runtime_activity"
+                ],
+                "no_of_unique_instances": 1,
+                "type": "varchar"
+            }
+        },
+        {
+            "destination_domain_name": {
+                "unique": true,
+                "found_in_event_types": [
+                    "runtime_activity"
+                ],
+                "no_of_unique_instances": 1,
+                "type": "varchar"
+            }
+        },
+        {
+            "file_path": {
+                "unique": true,
+                "found_in_event_types": [
+                    "runtime_activity"
+                ],
+                "no_of_unique_instances": 1,
+                "type": "varchar"
+            }
+        },
+        {
+            "process_command_line": {
+                "unique": true,
+                "found_in_event_types": [
+                    "runtime_activity"
+                ],
+                "no_of_unique_instances": 1,
+                "type": "varchar"
+            }
+        },
+        {
+            "process_name": {
+                "unique": true,
+                "found_in_event_types": [
+                    "runtime_activity"
+                ],
+                "no_of_unique_instances": 1,
+                "type": "varchar"
+            }
+        },
+        {
+            "target_process_command_line": {
+                "unique": true,
+                "found_in_event_types": [
+                    "runtime_activity"
+                ],
+                "no_of_unique_instances": 1,
+                "type": "varchar"
+            }
+        },
+        {
+            "target_file_path": {
+                "unique": true,
+                "found_in_event_types": [
+                    "runtime_activity"
+                ],
+                "no_of_unique_instances": 1,
+                "type": "varchar"
+            }
+        },
+        {
+            "destination_url": {
+                "unique": true,
+                "found_in_event_types": [
+                    "runtime_activity"
+                ],
+                "no_of_unique_instances": 1,
+                "type": "varchar"
+            }
+        },
+        {
+            "process_sha256": {
+                "unique": true,
+                "found_in_event_types": [
+                    "runtime_activity"
+                ],
+                "no_of_unique_instances": 1,
+                "type": "varchar"
+            }
+        },
+        {
+            "target_process_name": {
+                "unique": true,
+                "found_in_event_types": [
+                    "runtime_activity"
+                ],
+                "no_of_unique_instances": 1,
+                "type": "varchar"
+            }
+        },
+        {
+            "primary_ttp": {
+                "unique": true,
+                "found_in_event_types": [
+                    "runtime_activity"
+                ],
+                "no_of_unique_instances": 1,
+                "type": "varchar"
+            }
+        },
+        {
+            "technique_type": {
+                "unique": true,
+                "found_in_event_types": [
+                    "runtime_activity"
+                ],
+                "no_of_unique_instances": 1,
+                "type": "varchar"
+            }
+        },
+        {
+            "mitre_ttps": {
+                "unique": true,
+                "found_in_event_types": [
+                    "runtime_activity"
+                ],
+                "no_of_unique_instances": 1,
+                "type": "varchar"
+            }
+        },
+        {
+            "account_domain": {
+                "unique": true,
+                "found_in_event_types": [
+                    "runtime_activity"
+                ],
+                "no_of_unique_instances": 1,
+                "type": "varchar"
+            }
+        },
+        {
+            "target_sophos_pid": {
+                "unique": true,
+                "found_in_event_types": [
+                    "runtime_activity"
+                ],
+                "no_of_unique_instances": 1,
+                "type": "varchar"
+            }
+        },
+        {
+            "target_process_path": {
+                "unique": true,
+                "found_in_event_types": [
+                    "runtime_activity"
+                ],
+                "no_of_unique_instances": 1,
+                "type": "varchar"
+            }
+        },
+        {
+            "guid": {
+                "unique": true,
+                "found_in_event_types": [
+                    "runtime_activity"
+                ],
+                "no_of_unique_instances": 1,
+                "type": "varchar"
+            }
+        },
+        {
+            "boot_time": {
+                "unique": false,
+                "found_in_event_types": [
+                    "account_activity",
+                    "authentication_activity",
+                    "dns_activity",
+                    "file_activity",
+                    "network_activity",
+                    "process_activity",
+                    "runtime_activity",
+                    "scheduled_task_activity",
+                    "service_activity",
+                    "url_activity"
+                ],
+                "no_of_instances": 10,
+                "type": "bigint"
+            }
+        },
+        {
+            "category": {
+                "unique": false,
+                "found_in_event_types": [
+                    "account_activity",
+                    "authentication_activity",
+                    "dns_activity",
+                    "file_activity",
+                    "network_activity",
+                    "process_activity",
+                    "runtime_activity",
+                    "scheduled_task_activity",
+                    "service_activity",
+                    "url_activity"
+                ],
+                "no_of_instances": 10,
+                "type": "varchar"
+            }
+        },
+        {
+            "customer_id": {
+                "unique": false,
+                "found_in_event_types": [
+                    "account_activity",
+                    "authentication_activity",
+                    "dns_activity",
+                    "file_activity",
+                    "network_activity",
+                    "process_activity",
+                    "runtime_activity",
+                    "scheduled_task_activity",
+                    "service_activity",
+                    "url_activity"
+                ],
+                "no_of_instances": 10,
+                "type": "varchar"
+            }
+        },
+        {
+            "destination_ip": {
+                "unique": false,
+                "found_in_event_types": [
+                    "network_activity",
+                    "runtime_activity"
+                ],
+                "no_of_instances": 2,
+                "type": "varchar"
+            }
+        },
+        {
+            "destination_port": {
+                "unique": false,
+                "found_in_event_types": [
+                    "network_activity",
+                    "runtime_activity"
+                ],
+                "no_of_instances": 2,
+                "type": "int"
+            }
+        },
+        {
+            "domain_controller": {
+                "unique": false,
+                "found_in_event_types": [
+                    "account_activity",
+                    "authentication_activity",
+                    "dns_activity",
+                    "file_activity",
+                    "network_activity",
+                    "process_activity",
+                    "runtime_activity",
+                    "scheduled_task_activity",
+                    "service_activity",
+                    "url_activity"
+                ],
+                "no_of_instances": 10,
+                "type": "varchar"
+            }
+        },
+        {
+            "endpoint_id": {
+                "unique": false,
+                "found_in_event_types": [
+                    "account_activity",
+                    "authentication_activity",
+                    "dns_activity",
+                    "file_activity",
+                    "network_activity",
+                    "process_activity",
+                    "runtime_activity",
+                    "scheduled_task_activity",
+                    "service_activity",
+                    "url_activity"
+                ],
+                "no_of_instances": 10,
+                "type": "varchar"
+            }
+        },
+        {
+            "endpoint_type": {
+                "unique": false,
+                "found_in_event_types": [
+                    "account_activity",
+                    "authentication_activity",
+                    "dns_activity",
+                    "file_activity",
+                    "network_activity",
+                    "process_activity",
+                    "runtime_activity",
+                    "scheduled_task_activity",
+                    "service_activity",
+                    "url_activity"
+                ],
+                "no_of_instances": 10,
+                "type": "varchar"
+            }
+        },
+        {
+            "event_time": {
+                "unique": false,
+                "found_in_event_types": [
+                    "account_activity",
+                    "authentication_activity",
+                    "dns_activity",
+                    "file_activity",
+                    "network_activity",
+                    "process_activity",
+                    "runtime_activity",
+                    "scheduled_task_activity",
+                    "service_activity",
+                    "url_activity"
+                ],
+                "no_of_instances": 10,
+                "type": "timestamp"
+            }
+        },
+        {
+            "file": {
+                "unique": false,
+                "found_in_event_types": [
+                    "file_activity",
+                    "runtime_activity"
+                ],
+                "no_of_instances": 2,
+                "type": "varchar"
+            }
+        },
+        {
+            "file_size": {
+                "unique": false,
+                "found_in_event_types": [
+                    "file_activity",
+                    "process_activity",
+                    "runtime_activity"
+                ],
+                "no_of_instances": 3,
+                "type": "bigint"
+            }
+        },
+        {
+            "folded": {
+                "unique": false,
+                "found_in_event_types": [
+                    "account_activity",
+                    "authentication_activity",
+                    "dns_activity",
+                    "file_activity",
+                    "network_activity",
+                    "process_activity",
+                    "runtime_activity",
+                    "scheduled_task_activity",
+                    "service_activity",
+                    "url_activity"
+                ],
+                "no_of_instances": 10,
+                "type": "int"
+            }
+        },
+        {
+            "hostname": {
+                "unique": false,
+                "found_in_event_types": [
+                    "account_activity",
+                    "authentication_activity",
+                    "dns_activity",
+                    "file_activity",
+                    "network_activity",
+                    "process_activity",
+                    "runtime_activity",
+                    "scheduled_task_activity",
+                    "service_activity",
+                    "url_activity"
+                ],
+                "no_of_instances": 10,
+                "type": "varchar"
+            }
+        },
+        {
+            "ingestion_timestamp": {
+                "unique": false,
+                "found_in_event_types": [
+                    "account_activity",
+                    "authentication_activity",
+                    "dns_activity",
+                    "file_activity",
+                    "network_activity",
+                    "process_activity",
+                    "runtime_activity",
+                    "scheduled_task_activity",
+                    "service_activity",
+                    "url_activity"
+                ],
+                "no_of_instances": 10,
+                "type": "timestamp"
+            }
+        },
+        {
+            "internal_customer_id": {
+                "unique": false,
+                "found_in_event_types": [
+                    "account_activity",
+                    "authentication_activity",
+                    "dns_activity",
+                    "file_activity",
+                    "network_activity",
+                    "process_activity",
+                    "runtime_activity",
+                    "scheduled_task_activity",
+                    "service_activity",
+                    "url_activity"
+                ],
+                "no_of_instances": 10,
+                "type": "varchar"
+            }
+        },
+        {
+            "logon_hours": {
+                "unique": false,
+                "found_in_event_types": [
+                    "account_activity",
+                    "authentication_activity"
+                ],
+                "no_of_instances": 2,
+                "type": "varchar"
+            }
+        },
+        {
+            "message_identifier": {
+                "unique": false,
+                "found_in_event_types": [
+                    "account_activity",
+                    "authentication_activity",
+                    "dns_activity",
+                    "file_activity",
+                    "network_activity",
+                    "process_activity",
+                    "runtime_activity",
+                    "scheduled_task_activity",
+                    "service_activity",
+                    "url_activity"
+                ],
+                "no_of_instances": 10,
+                "type": "varchar"
+            }
+        },
+        {
+            "os_name": {
+                "unique": false,
+                "found_in_event_types": [
+                    "account_activity",
+                    "authentication_activity",
+                    "dns_activity",
+                    "file_activity",
+                    "network_activity",
+                    "process_activity",
+                    "runtime_activity",
+                    "scheduled_task_activity",
+                    "service_activity",
+                    "url_activity"
+                ],
+                "no_of_instances": 10,
+                "type": "varchar"
+            }
+        },
+        {
+            "os_platform": {
+                "unique": false,
+                "found_in_event_types": [
+                    "account_activity",
+                    "authentication_activity",
+                    "dns_activity",
+                    "file_activity",
+                    "network_activity",
+                    "process_activity",
+                    "runtime_activity",
+                    "scheduled_task_activity",
+                    "service_activity",
+                    "url_activity"
+                ],
+                "no_of_instances": 10,
+                "type": "varchar"
+            }
+        },
+        {
+            "os_version": {
+                "unique": false,
+                "found_in_event_types": [
+                    "account_activity",
+                    "authentication_activity",
+                    "dns_activity",
+                    "file_activity",
+                    "network_activity",
+                    "process_activity",
+                    "runtime_activity",
+                    "scheduled_task_activity",
+                    "service_activity",
+                    "url_activity"
+                ],
+                "no_of_instances": 10,
+                "type": "varchar"
+            }
+        },
+        {
+            "parent_sophos_pid": {
+                "unique": false,
+                "found_in_event_types": [
+                    "process_activity",
+                    "runtime_activity",
+                    "service_activity"
+                ],
+                "no_of_instances": 3,
+                "type": "varchar"
+            }
+        },
+        {
+            "path": {
+                "unique": false,
+                "found_in_event_types": [
+                    "file_activity",
+                    "process_activity"
+                ],
+                "no_of_instances": 2,
+                "type": "varchar"
+            }
+        },
+        {
+            "process_path": {
+                "unique": false,
+                "found_in_event_types": [
+                    "authentication_activity",
+                    "runtime_activity"
+                ],
+                "no_of_instances": 2,
+                "type": "varchar"
+            }
+        },
+        {
+            "protocol": {
+                "unique": false,
+                "found_in_event_types": [
+                    "network_activity",
+                    "runtime_activity"
+                ],
+                "no_of_instances": 2,
+                "type": "int"
+            }
+        },
+        {
+            "public_ip": {
+                "unique": false,
+                "found_in_event_types": [
+                    "account_activity",
+                    "authentication_activity",
+                    "dns_activity",
+                    "file_activity",
+                    "network_activity",
+                    "process_activity",
+                    "runtime_activity",
+                    "scheduled_task_activity",
+                    "service_activity",
+                    "url_activity"
+                ],
+                "no_of_instances": 10,
+                "type": "varchar"
+            }
+        },
+        {
+            "record_identifier": {
+                "unique": false,
+                "found_in_event_types": [
+                    "account_activity",
+                    "authentication_activity",
+                    "dns_activity",
+                    "file_activity",
+                    "network_activity",
+                    "process_activity",
+                    "runtime_activity",
+                    "scheduled_task_activity",
+                    "service_activity",
+                    "url_activity"
+                ],
+                "no_of_instances": 10,
+                "type": "varchar"
+            }
+        },
+        {
+            "service_name": {
+                "unique": false,
+                "found_in_event_types": [
+                    "runtime_activity",
+                    "service_activity"
+                ],
+                "no_of_instances": 2,
+                "type": "varchar"
+            }
+        },
+        {
+            "sha256": {
+                "unique": false,
+                "found_in_event_types": [
+                    "file_activity",
+                    "process_activity"
+                ],
+                "no_of_instances": 2,
+                "type": "varchar"
+            }
+        },
+        {
+            "sophos_pid": {
+                "unique": false,
+                "found_in_event_types": [
+                    "account_activity",
+                    "authentication_activity",
+                    "dns_activity",
+                    "file_activity",
+                    "network_activity",
+                    "process_activity",
+                    "runtime_activity",
+                    "scheduled_task_activity",
+                    "service_activity",
+                    "url_activity"
+                ],
+                "no_of_instances": 10,
+                "type": "varchar"
+            }
+        },
+        {
+            "sophos_tid": {
+                "unique": false,
+                "found_in_event_types": [
+                    "dns_activity",
+                    "file_activity",
+                    "url_activity"
+                ],
+                "no_of_instances": 3,
+                "type": "varchar"
+            }
+        },
+        {
+            "source_ip": {
+                "unique": false,
+                "found_in_event_types": [
+                    "network_activity",
+                    "runtime_activity"
+                ],
+                "no_of_instances": 2,
+                "type": "varchar"
+            }
+        },
+        {
+            "source_port": {
+                "unique": false,
+                "found_in_event_types": [
+                    "network_activity",
+                    "runtime_activity"
+                ],
+                "no_of_instances": 2,
+                "type": "int"
+            }
+        },
+        {
+            "start_time": {
+                "unique": false,
+                "found_in_event_types": [
+                    "network_activity",
+                    "runtime_activity"
+                ],
+                "no_of_instances": 2,
+                "type": "bigint"
+            }
+        },
+        {
+            "stream_ingest_date": {
+                "unique": false,
+                "found_in_event_types": [
+                    "account_activity",
+                    "authentication_activity",
+                    "dns_activity",
+                    "file_activity",
+                    "network_activity",
+                    "process_activity",
+                    "runtime_activity",
+                    "scheduled_task_activity",
+                    "service_activity",
+                    "url_activity"
+                ],
+                "no_of_instances": 10,
+                "type": "varchar"
+            }
+        },
+        {
+            "subcategory": {
+                "unique": false,
+                "found_in_event_types": [
+                    "account_activity",
+                    "authentication_activity",
+                    "dns_activity",
+                    "file_activity",
+                    "network_activity",
+                    "process_activity",
+                    "runtime_activity",
+                    "scheduled_task_activity",
+                    "service_activity",
+                    "url_activity"
+                ],
+                "no_of_instances": 10,
+                "type": "varchar"
+            }
+        },
+        {
+            "target_domain": {
+                "unique": false,
+                "found_in_event_types": [
+                    "account_activity",
+                    "authentication_activity"
+                ],
+                "no_of_instances": 2,
+                "type": "varchar"
+            }
+        },
+        {
+            "target_sid": {
+                "unique": false,
+                "found_in_event_types": [
+                    "account_activity",
+                    "authentication_activity"
+                ],
+                "no_of_instances": 2,
+                "type": "varchar"
+            }
+        },
+        {
+            "target_username": {
+                "unique": false,
+                "found_in_event_types": [
+                    "account_activity",
+                    "authentication_activity"
+                ],
+                "no_of_instances": 2,
+                "type": "varchar"
+            }
+        },
+        {
+            "task_name": {
+                "unique": false,
+                "found_in_event_types": [
+                    "runtime_activity",
+                    "scheduled_task_activity"
+                ],
+                "no_of_instances": 2,
+                "type": "varchar"
+            }
+        },
+        {
+            "time": {
+                "unique": false,
+                "found_in_event_types": [
+                    "account_activity",
+                    "authentication_activity",
+                    "dns_activity",
+                    "file_activity",
+                    "process_activity",
+                    "runtime_activity",
+                    "scheduled_task_activity",
+                    "service_activity",
+                    "url_activity"
+                ],
+                "no_of_instances": 9,
+                "type": "bigint"
+            }
+        },
+        {
+            "timestamp_nano": {
+                "unique": false,
+                "found_in_event_types": [
+                    "account_activity",
+                    "authentication_activity",
+                    "dns_activity",
+                    "file_activity",
+                    "network_activity",
+                    "process_activity",
+                    "runtime_activity",
+                    "scheduled_task_activity",
+                    "service_activity",
+                    "url_activity"
+                ],
+                "no_of_instances": 10,
+                "type": "bigint"
+            }
+        },
+        {
+            "user_domain": {
+                "unique": false,
+                "found_in_event_types": [
+                    "account_activity",
+                    "authentication_activity",
+                    "service_activity"
+                ],
+                "no_of_instances": 3,
+                "type": "varchar"
+            }
+        },
+        {
+            "user_sid": {
+                "unique": false,
+                "found_in_event_types": [
+                    "account_activity",
+                    "authentication_activity",
+                    "process_activity",
+                    "service_activity"
+                ],
+                "no_of_instances": 4,
+                "type": "varchar"
+            }
+        },
+        {
+            "username": {
+                "unique": false,
+                "found_in_event_types": [
+                    "account_activity",
+                    "authentication_activity",
+                    "process_activity",
+                    "scheduled_task_activity",
+                    "service_activity"
+                ],
+                "no_of_instances": 5,
+                "type": "varchar"
+            }
+        }
+    ],
+    "fdh_raw_attributes": [
+        {
+            "dns_activity": {
+                "category": "varchar",
+                "domain_name": "varchar",
+                "sophos_pid": "varchar",
+                "sophos_tid": "varchar",
+                "subcategory": "varchar",
+                "time": "bigint",
+                "stream_ingest_date": "varchar",
+                "ingestion_timestamp": "timestamp",
+                "message_identifier": "varchar",
+                "record_identifier": "varchar",
+                "event_time": "timestamp",
+                "folded": "int",
+                "boot_time": "bigint",
+                "hostname": "varchar",
+                "os_name": "varchar",
+                "os_platform": "varchar",
+                "os_version": "varchar",
+                "public_ip": "varchar",
+                "endpoint_type": "varchar",
+                "domain_controller": "varchar",
+                "customer_id": "varchar",
+                "endpoint_id": "varchar",
+                "internal_customer_id": "varchar",
+                "timestamp_nano": "bigint"
+            },
+            "file_activity": {
+                "category": "varchar",
+                "change_time": "bigint",
+                "creation_time": "bigint",
+                "file": "varchar",
+                "file_attributes": "int",
+                "file_extension": "varchar",
+                "file_id": "varchar",
+                "file_size": "bigint",
+                "file_type": "int",
+                "file_type_name": "varchar",
+                "last_access_time": "bigint",
+                "last_write_time": "bigint",
+                "number_of_hard_links": "int",
+                "path": "varchar",
+                "path_type": "int",
+                "path_type_name": "varchar",
+                "sha256": "varchar",
+                "sophos_pid": "varchar",
+                "sophos_tid": "varchar",
+                "subcategory": "varchar",
+                "subject": "varchar",
+                "target_file": "varchar",
+                "target_file_extension": "varchar",
+                "target_path": "varchar",
+                "time": "bigint",
+                "stream_ingest_date": "varchar",
+                "ingestion_timestamp": "timestamp",
+                "message_identifier": "varchar",
+                "record_identifier": "varchar",
+                "event_time": "timestamp",
+                "folded": "int",
+                "boot_time": "bigint",
+                "hostname": "varchar",
+                "os_name": "varchar",
+                "os_platform": "varchar",
+                "os_version": "varchar",
+                "public_ip": "varchar",
+                "endpoint_type": "varchar",
+                "domain_controller": "varchar",
+                "customer_id": "varchar",
+                "endpoint_id": "varchar",
+                "internal_customer_id": "varchar",
+                "timestamp_nano": "bigint"
+            },
+            "network_activity": {
+                "address_type_name": "varchar",
+                "bytes_received": "bigint",
+                "bytes_sent": "bigint",
+                "category": "varchar",
+                "destination_ip": "varchar",
+                "destination_port": "int",
+                "end_time": "bigint",
+                "protocol": "int",
+                "protocol_name": "varchar",
+                "sophos_pid": "varchar",
+                "source_ip": "varchar",
+                "source_port": "int",
+                "start_time": "bigint",
+                "subcategory": "varchar",
+                "stream_ingest_date": "varchar",
+                "ingestion_timestamp": "timestamp",
+                "message_identifier": "varchar",
+                "record_identifier": "varchar",
+                "event_time": "timestamp",
+                "folded": "int",
+                "boot_time": "bigint",
+                "hostname": "varchar",
+                "os_name": "varchar",
+                "os_platform": "varchar",
+                "os_version": "varchar",
+                "public_ip": "varchar",
+                "endpoint_type": "varchar",
+                "domain_controller": "varchar",
+                "customer_id": "varchar",
+                "endpoint_id": "varchar",
+                "internal_customer_id": "varchar",
+                "timestamp_nano": "bigint"
+            },
+            "process_activity": {
+                "category": "varchar",
+                "cmdline": "varchar",
+                "file_size": "bigint",
+                "global_rep": "int",
+                "local_rep": "int",
+                "ml_score": "int",
+                "name": "varchar",
+                "parent_cmdline": "varchar",
+                "parent_name": "varchar",
+                "parent_path": "varchar",
+                "parent": "bigint",
+                "parent_sophos_pid": "varchar",
+                "parent_start_time": "bigint",
+                "path": "varchar",
+                "pid": "bigint",
+                "pua_score": "int",
+                "sha1": "varchar",
+                "sha256": "varchar",
+                "sophos_pid": "varchar",
+                "starting_integrity_level": "int",
+                "starting_integrity_level_name": "varchar",
+                "subcategory": "varchar",
+                "time": "bigint",
+                "user_sid": "varchar",
+                "username": "varchar",
+                "company_name": "varchar",
+                "file_description": "varchar",
+                "file_version": "varchar",
+                "original_filename": "varchar",
+                "is_process_file_signed": "varchar",
+                "local_rep_data": "varchar",
+                "product_name": "varchar",
+                "stream_ingest_date": "varchar",
+                "ingestion_timestamp": "timestamp",
+                "message_identifier": "varchar",
+                "record_identifier": "varchar",
+                "event_time": "timestamp",
+                "folded": "int",
+                "boot_time": "bigint",
+                "hostname": "varchar",
+                "os_name": "varchar",
+                "os_platform": "varchar",
+                "os_version": "varchar",
+                "public_ip": "varchar",
+                "endpoint_type": "varchar",
+                "domain_controller": "varchar",
+                "customer_id": "varchar",
+                "endpoint_id": "varchar",
+                "internal_customer_id": "varchar",
+                "timestamp_nano": "bigint"
+            },
+            "scheduled_task_activity": {
+                "category": "varchar",
+                "sophos_pid": "varchar",
+                "subcategory": "varchar",
+                "task_content": "varchar",
+                "task_name": "varchar",
+                "time": "bigint",
+                "username": "varchar",
+                "stream_ingest_date": "varchar",
+                "ingestion_timestamp": "timestamp",
+                "message_identifier": "varchar",
+                "record_identifier": "varchar",
+                "event_time": "timestamp",
+                "folded": "int",
+                "boot_time": "bigint",
+                "hostname": "varchar",
+                "os_name": "varchar",
+                "os_platform": "varchar",
+                "os_version": "varchar",
+                "public_ip": "varchar",
+                "endpoint_type": "varchar",
+                "domain_controller": "varchar",
+                "customer_id": "varchar",
+                "endpoint_id": "varchar",
+                "internal_customer_id": "varchar",
+                "timestamp_nano": "bigint"
+            },
+            "service_activity": {
+                "category": "varchar",
+                "new_service_value": "varchar",
+                "parent_sophos_pid": "varchar",
+                "service_account": "varchar",
+                "service_name": "varchar",
+                "service_path": "varchar",
+                "service_start_type": "int",
+                "service_start_type_name": "varchar",
+                "service_type_enum": "int",
+                "service_type_name": "varchar",
+                "sophos_pid": "varchar",
+                "subcategory": "varchar",
+                "time": "bigint",
+                "user_domain": "varchar",
+                "user_sid": "varchar",
+                "username": "varchar",
+                "stream_ingest_date": "varchar",
+                "ingestion_timestamp": "timestamp",
+                "message_identifier": "varchar",
+                "record_identifier": "varchar",
+                "event_time": "timestamp",
+                "folded": "int",
+                "boot_time": "bigint",
+                "hostname": "varchar",
+                "os_name": "varchar",
+                "os_platform": "varchar",
+                "os_version": "varchar",
+                "public_ip": "varchar",
+                "endpoint_type": "varchar",
+                "domain_controller": "varchar",
+                "customer_id": "varchar",
+                "endpoint_id": "varchar",
+                "internal_customer_id": "varchar",
+                "timestamp_nano": "bigint"
+            },
+            "url_activity": {
+                "category": "varchar",
+                "sophos_pid": "varchar",
+                "sophos_tid": "varchar",
+                "subcategory": "varchar",
+                "time": "bigint",
+                "url": "varchar",
+                "stream_ingest_date": "varchar",
+                "ingestion_timestamp": "timestamp",
+                "message_identifier": "varchar",
+                "record_identifier": "varchar",
+                "event_time": "timestamp",
+                "folded": "int",
+                "boot_time": "bigint",
+                "hostname": "varchar",
+                "os_name": "varchar",
+                "os_platform": "varchar",
+                "os_version": "varchar",
+                "public_ip": "varchar",
+                "endpoint_type": "varchar",
+                "domain_controller": "varchar",
+                "customer_id": "varchar",
+                "endpoint_id": "varchar",
+                "internal_customer_id": "varchar",
+                "timestamp_nano": "bigint"
+            },
+            "account_activity": {
+                "account_expires": "varchar",
+                "allowed_to_delegate_to": "varchar",
+                "category": "varchar",
+                "display_name": "varchar",
+                "home_directory": "varchar",
+                "home_path": "varchar",
+                "logon_hours": "varchar",
+                "new_uac_value": "varchar",
+                "old_uac_value": "varchar",
+                "password_last_set": "varchar",
+                "primary_group_id": "varchar",
+                "privilege_list": "varchar",
+                "profile_path": "varchar",
+                "sam_account_name": "varchar",
+                "sid_history": "varchar",
+                "script_path": "varchar",
+                "sophos_pid": "varchar",
+                "subcategory": "varchar",
+                "target_domain": "varchar",
+                "target_sid": "varchar",
+                "target_username": "varchar",
+                "time": "bigint",
+                "uac": "varchar",
+                "user_domain": "varchar",
+                "user_logon_id": "varchar",
+                "user_parameters": "varchar",
+                "user_principal_name": "varchar",
+                "user_sid": "varchar",
+                "user_workstations": "varchar",
+                "username": "varchar",
+                "stream_ingest_date": "varchar",
+                "ingestion_timestamp": "timestamp",
+                "message_identifier": "varchar",
+                "record_identifier": "varchar",
+                "event_time": "timestamp",
+                "folded": "int",
+                "boot_time": "bigint",
+                "hostname": "varchar",
+                "os_name": "varchar",
+                "os_platform": "varchar",
+                "os_version": "varchar",
+                "public_ip": "varchar",
+                "endpoint_type": "varchar",
+                "domain_controller": "varchar",
+                "customer_id": "varchar",
+                "endpoint_id": "varchar",
+                "internal_customer_id": "varchar",
+                "timestamp_nano": "bigint"
+            },
+            "authentication_activity": {
+                "authentication_package": "varchar",
+                "category": "varchar",
+                "elevated_token": "varchar",
+                "executing_sophos_pid": "varchar",
+                "failure_reason": "varchar",
+                "impersonation_level": "varchar",
+                "key_length": "int",
+                "lm_package": "varchar",
+                "logon_guid": "varchar",
+                "logon_hours": "varchar",
+                "logon_id": "varchar",
+                "logon_process": "varchar",
+                "logon_type": "int",
+                "process_path": "varchar",
+                "remote_address": "varchar",
+                "remote_port": "int",
+                "restricted_admin_mode": "varchar",
+                "sophos_pid": "varchar",
+                "status": "varchar",
+                "sub_status": "varchar",
+                "subcategory": "varchar",
+                "target_domain": "varchar",
+                "target_linked_logon_id": "varchar",
+                "target_logon_id": "varchar",
+                "target_outbound_domain": "varchar",
+                "target_outbound_username": "varchar",
+                "target_sid": "varchar",
+                "target_username": "varchar",
+                "time": "bigint",
+                "transmitted_services": "varchar",
+                "user_domain": "varchar",
+                "user_sid": "varchar",
+                "username": "varchar",
+                "virtual_account": "varchar",
+                "workstation_name": "varchar",
+                "stream_ingest_date": "varchar",
+                "ingestion_timestamp": "timestamp",
+                "message_identifier": "varchar",
+                "record_identifier": "varchar",
+                "event_time": "timestamp",
+                "folded": "int",
+                "boot_time": "bigint",
+                "hostname": "varchar",
+                "os_name": "varchar",
+                "os_platform": "varchar",
+                "os_version": "varchar",
+                "public_ip": "varchar",
+                "endpoint_type": "varchar",
+                "domain_controller": "varchar",
+                "customer_id": "varchar",
+                "endpoint_id": "varchar",
+                "internal_customer_id": "varchar",
+                "timestamp_nano": "bigint"
+            },
+            "runtime_activity": {
+                "account_domain": "varchar",
+                "account_name": "varchar",
+                "account_sid": "varchar",
+                "category": "varchar",
+                "destination_domain_name": "varchar",
+                "destination_ip": "varchar",
+                "destination_port": "int",
+                "destination_url": "varchar",
+                "event_data": "varchar",
+                "file": "varchar",
+                "file_download_url": "varchar",
+                "file_path": "varchar",
+                "file_sha256": "varchar",
+                "file_size": "bigint",
+                "guid": "varchar",
+                "mitre_ttps": "varchar",
+                "parent_process_name": "varchar",
+                "parent_process_path": "varchar",
+                "parent_sophos_pid": "varchar",
+                "primary_ttp": "varchar",
+                "process_command_line": "varchar",
+                "process_name": "varchar",
+                "process_original_name": "varchar",
+                "process_path": "varchar",
+                "process_sha256": "varchar",
+                "process_user_sid": "varchar",
+                "protocol": "int",
+                "reg_path": "varchar",
+                "reg_value_data": "varchar",
+                "reg_value_name": "varchar",
+                "service_name": "varchar",
+                "sophos_pid": "varchar",
+                "source_ip": "varchar",
+                "source_port": "int",
+                "start_time": "bigint",
+                "subcategory": "varchar",
+                "target_file_path": "varchar",
+                "target_process_command_line": "varchar",
+                "target_process_name": "varchar",
+                "target_process_path": "varchar",
+                "target_process_sha256": "varchar",
+                "target_sophos_pid": "varchar",
+                "task_name": "varchar",
+                "technique_summary": "varchar",
+                "technique_type": "varchar",
+                "technique_value": "varchar",
+                "time": "bigint",
+                "stream_ingest_date": "varchar",
+                "ingestion_timestamp": "timestamp",
+                "message_identifier": "varchar",
+                "record_identifier": "varchar",
+                "event_time": "timestamp",
+                "folded": "int",
+                "boot_time": "bigint",
+                "hostname": "varchar",
+                "os_name": "varchar",
+                "os_platform": "varchar",
+                "os_version": "varchar",
+                "public_ip": "varchar",
+                "endpoint_type": "varchar",
+                "domain_controller": "varchar",
+                "customer_id": "varchar",
+                "endpoint_id": "varchar",
+                "internal_customer_id": "varchar",
+                "timestamp_nano": "bigint"
+            }
+        }
+    ]
+}
