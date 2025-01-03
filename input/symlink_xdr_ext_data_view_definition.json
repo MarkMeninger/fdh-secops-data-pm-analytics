@@ -1,0 +1,1666 @@
+{
+    "views": [
+        {
+            "viewName": "dns_activity",
+            "tableName": "symlink_xdr_ext_data",
+            "originalSql": "select category, domain_name, sophos_pid, sophos_tid, subcategory, time, stream_ingest_date,  ingestion_timestamp, message_identifier, record_identifier, unix_time as event_time, folded, meta_boot_time as boot_time, meta_hostname as hostname, meta_os_name as os_name, meta_os_platform as os_platform,meta_os_version as os_version, meta_public_ip as public_ip, meta_endpoint_type as endpoint_type, meta_domain_controller as domain_controller, customer_id, endpoint_id,internal_customer_id, timestamp_nano from symlink_xdr_ext_data where query_name='dns_activity'",
+            "columns": [
+                {
+                    "name": "category",
+                    "type": "varchar"
+                },
+                {
+                    "name": "domain_name",
+                    "type": "varchar"
+                },
+                {
+                    "name": "sophos_pid",
+                    "type": "varchar"
+                },
+                {
+                    "name": "sophos_tid",
+                    "type": "varchar"
+                },
+                {
+                    "name": "subcategory",
+                    "type": "varchar"
+                },
+                {
+                    "name": "time",
+                    "type": "bigint"
+                },
+                {
+                    "name": "stream_ingest_date",
+                    "type": "varchar"
+                },
+                {
+                    "name": "ingestion_timestamp",
+                    "type": "timestamp"
+                },
+                {
+                    "name": "message_identifier",
+                    "type": "varchar"
+                },
+                {
+                    "name": "record_identifier",
+                    "type": "varchar"
+                },
+                {
+                    "name": "event_time",
+                    "type": "timestamp"
+                },
+                {
+                    "name": "folded",
+                    "type": "int"
+                },
+                {
+                    "name": "boot_time",
+                    "type": "bigint"
+                },
+                {
+                    "name": "hostname",
+                    "type": "varchar"
+                },
+                {
+                    "name": "os_name",
+                    "type": "varchar"
+                },
+                {
+                    "name": "os_platform",
+                    "type": "varchar"
+                },
+                {
+                    "name": "os_version",
+                    "type": "varchar"
+                },
+                {
+                    "name": "public_ip",
+                    "type": "varchar"
+                },
+                {
+                    "name": "endpoint_type",
+                    "type": "varchar"
+                },
+                {
+                    "name": "domain_controller",
+                    "type": "varchar"
+                },
+                {
+                    "name": "customer_id",
+                    "type": "varchar"
+                },
+                {
+                    "name": "endpoint_id",
+                    "type": "varchar"
+                },
+                {
+                    "name": "internal_customer_id",
+                    "type": "varchar"
+                },
+                {
+                    "name": "timestamp_nano",
+                    "type": "bigint"
+                }
+            ]
+        },
+        {
+            "viewName": "file_activity",
+            "tableName": "symlink_xdr_ext_data",
+            "originalSql": "select category, change_time, creation_time,file,file_attributes,file_extension,file_id,file_size,file_type,file_type_name,last_access_time,last_write_time,number_of_hard_links,path,path_type,path_type_name,sha256,sophos_pid,sophos_tid,subcategory,subject,target_file,target_file_extension,target_path,time,stream_ingest_date,ingestion_timestamp, message_identifier, record_identifier, unix_time as event_time, folded, meta_boot_time as boot_time, meta_hostname as hostname, meta_os_name as os_name, meta_os_platform as os_platform, meta_os_version as os_version, meta_public_ip as public_ip, meta_endpoint_type as endpoint_type, meta_domain_controller as domain_controller, customer_id, endpoint_id, internal_customer_id, timestamp_nano from symlink_xdr_ext_data where query_name='file_activity'",
+            "columns": [
+                {
+                    "name": "category",
+                    "type": "varchar"
+                },
+                {
+                    "name": "change_time",
+                    "type": "bigint"
+                },
+                {
+                    "name": "creation_time",
+                    "type": "bigint"
+                },
+                {
+                    "name": "file",
+                    "type": "varchar"
+                },
+                {
+                    "name": "file_attributes",
+                    "type": "int"
+                },
+                {
+                    "name": "file_extension",
+                    "type": "varchar"
+                },
+                {
+                    "name": "file_id",
+                    "type": "varchar"
+                },
+                {
+                    "name": "file_size",
+                    "type": "bigint"
+                },
+                {
+                    "name": "file_type",
+                    "type": "int"
+                },
+                {
+                    "name": "file_type_name",
+                    "type": "varchar"
+                },
+                {
+                    "name": "last_access_time",
+                    "type": "bigint"
+                },
+                {
+                    "name": "last_write_time",
+                    "type": "bigint"
+                },
+                {
+                    "name": "number_of_hard_links",
+                    "type": "int"
+                },
+                {
+                    "name": "path",
+                    "type": "varchar"
+                },
+                {
+                    "name": "path_type",
+                    "type": "int"
+                },
+                {
+                    "name": "path_type_name",
+                    "type": "varchar"
+                },
+                {
+                    "name": "sha256",
+                    "type": "varchar"
+                },
+                {
+                    "name": "sophos_pid",
+                    "type": "varchar"
+                },
+                {
+                    "name": "sophos_tid",
+                    "type": "varchar"
+                },
+                {
+                    "name": "subcategory",
+                    "type": "varchar"
+                },
+                {
+                    "name": "subject",
+                    "type": "varchar"
+                },
+                {
+                    "name": "target_file",
+                    "type": "varchar"
+                },
+                {
+                    "name": "target_file_extension",
+                    "type": "varchar"
+                },
+                {
+                    "name": "target_path",
+                    "type": "varchar"
+                },
+                {
+                    "name": "time",
+                    "type": "bigint"
+                },
+                {
+                    "name": "stream_ingest_date",
+                    "type": "varchar"
+                },
+                {
+                    "name": "ingestion_timestamp",
+                    "type": "timestamp"
+                },
+                {
+                    "name": "message_identifier",
+                    "type": "varchar"
+                },
+                {
+                    "name": "record_identifier",
+                    "type": "varchar"
+                },
+                {
+                    "name": "event_time",
+                    "type": "timestamp"
+                },
+                {
+                    "name": "folded",
+                    "type": "int"
+                },
+                {
+                    "name": "boot_time",
+                    "type": "bigint"
+                },
+                {
+                    "name": "hostname",
+                    "type": "varchar"
+                },
+                {
+                    "name": "os_name",
+                    "type": "varchar"
+                },
+                {
+                    "name": "os_platform",
+                    "type": "varchar"
+                },
+                {
+                    "name": "os_version",
+                    "type": "varchar"
+                },
+                {
+                    "name": "public_ip",
+                    "type": "varchar"
+                },
+                {
+                    "name": "endpoint_type",
+                    "type": "varchar"
+                },
+                {
+                    "name": "domain_controller",
+                    "type": "varchar"
+                },
+                {
+                    "name": "customer_id",
+                    "type": "varchar"
+                },
+                {
+                    "name": "endpoint_id",
+                    "type": "varchar"
+                },
+                {
+                    "name": "internal_customer_id",
+                    "type": "varchar"
+                },
+                {
+                    "name": "timestamp_nano",
+                    "type": "bigint"
+                }
+            ]
+        },
+        {
+            "viewName": "network_activity",
+            "tableName": "symlink_xdr_ext_data",
+            "originalSql": "select address_type_name,bytes_received,bytes_sent,category,destination_ip,destination_port,end_time,protocol,protocol_name,sophos_pid,source_ip,source_port,start_time,subcategory,stream_ingest_date, ingestion_timestamp, message_identifier, record_identifier, unix_time as event_time, folded, meta_boot_time as boot_time, meta_hostname as hostname, meta_os_name as os_name, meta_os_platform as os_platform, meta_os_version as os_version, meta_public_ip as public_ip, meta_endpoint_type as endpoint_type, meta_domain_controller as domain_controller, customer_id, endpoint_id, internal_customer_id, timestamp_nano from symlink_xdr_ext_data where query_name='network_activity' or query_name='sophos_network_activity_windows'",
+            "columns": [
+                {
+                    "name": "address_type_name",
+                    "type": "varchar"
+                },
+                {
+                    "name": "bytes_received",
+                    "type": "bigint"
+                },
+                {
+                    "name": "bytes_sent",
+                    "type": "bigint"
+                },
+                {
+                    "name": "category",
+                    "type": "varchar"
+                },
+                {
+                    "name": "destination_ip",
+                    "type": "varchar"
+                },
+                {
+                    "name": "destination_port",
+                    "type": "int"
+                },
+                {
+                    "name": "end_time",
+                    "type": "bigint"
+                },
+                {
+                    "name": "protocol",
+                    "type": "int"
+                },
+                {
+                    "name": "protocol_name",
+                    "type": "varchar"
+                },
+                {
+                    "name": "sophos_pid",
+                    "type": "varchar"
+                },
+                {
+                    "name": "source_ip",
+                    "type": "varchar"
+                },
+                {
+                    "name": "source_port",
+                    "type": "int"
+                },
+                {
+                    "name": "start_time",
+                    "type": "bigint"
+                },
+                {
+                    "name": "subcategory",
+                    "type": "varchar"
+                },
+                {
+                    "name": "stream_ingest_date",
+                    "type": "varchar"
+                },
+                {
+                    "name": "ingestion_timestamp",
+                    "type": "timestamp"
+                },
+                {
+                    "name": "message_identifier",
+                    "type": "varchar"
+                },
+                {
+                    "name": "record_identifier",
+                    "type": "varchar"
+                },
+                {
+                    "name": "event_time",
+                    "type": "timestamp"
+                },
+                {
+                    "name": "folded",
+                    "type": "int"
+                },
+                {
+                    "name": "boot_time",
+                    "type": "bigint"
+                },
+                {
+                    "name": "hostname",
+                    "type": "varchar"
+                },
+                {
+                    "name": "os_name",
+                    "type": "varchar"
+                },
+                {
+                    "name": "os_platform",
+                    "type": "varchar"
+                },
+                {
+                    "name": "os_version",
+                    "type": "varchar"
+                },
+                {
+                    "name": "public_ip",
+                    "type": "varchar"
+                },
+                {
+                    "name": "endpoint_type",
+                    "type": "varchar"
+                },
+                {
+                    "name": "domain_controller",
+                    "type": "varchar"
+                },
+                {
+                    "name": "customer_id",
+                    "type": "varchar"
+                },
+                {
+                    "name": "endpoint_id",
+                    "type": "varchar"
+                },
+                {
+                    "name": "internal_customer_id",
+                    "type": "varchar"
+                },
+                {
+                    "name": "timestamp_nano",
+                    "type": "bigint"
+                }
+            ]
+        },
+        {
+            "viewName": "process_activity",
+            "tableName": "symlink_xdr_ext_data",
+            "originalSql": "select category,cmdline,file_size,global_rep,local_rep,ml_score,name,parent_cmdline,parent_name,parent_path,parent,parent_sophos_pid,parent_start_time,path,pid,pua_score,sha1,sha256,sophos_pid,starting_integrity_level,starting_integrity_level_name,subcategory,time,user_sid,username,company_name,file_description,file_version,original_filename,is_process_file_signed,local_rep_data,product_name,stream_ingest_date,ingestion_timestamp, message_identifier, record_identifier, unix_time as event_time, folded, meta_boot_time as boot_time, meta_hostname as hostname, meta_os_name as os_name, meta_os_platform as os_platform, meta_os_version as os_version, meta_public_ip as public_ip, meta_endpoint_type as endpoint_type, meta_domain_controller as domain_controller, customer_id, endpoint_id, internal_customer_id, timestamp_nano from symlink_xdr_ext_data where query_name IN ('running_processes_windows_sophos', 'running_processes_linux_events')",
+            "columns": [
+                {
+                    "name": "category",
+                    "type": "varchar"
+                },
+                {
+                    "name": "cmdline",
+                    "type": "varchar"
+                },
+                {
+                    "name": "file_size",
+                    "type": "bigint"
+                },
+                {
+                    "name": "global_rep",
+                    "type": "int"
+                },
+                {
+                    "name": "local_rep",
+                    "type": "int"
+                },
+                {
+                    "name": "ml_score",
+                    "type": "int"
+                },
+                {
+                    "name": "name",
+                    "type": "varchar"
+                },
+                {
+                    "name": "parent_cmdline",
+                    "type": "varchar"
+                },
+                {
+                    "name": "parent_name",
+                    "type": "varchar"
+                },
+                {
+                    "name": "parent_path",
+                    "type": "varchar"
+                },
+                {
+                    "name": "parent",
+                    "type": "bigint"
+                },
+                {
+                    "name": "parent_sophos_pid",
+                    "type": "varchar"
+                },
+                {
+                    "name": "parent_start_time",
+                    "type": "bigint"
+                },
+                {
+                    "name": "path",
+                    "type": "varchar"
+                },
+                {
+                    "name": "pid",
+                    "type": "bigint"
+                },
+                {
+                    "name": "pua_score",
+                    "type": "int"
+                },
+                {
+                    "name": "sha1",
+                    "type": "varchar"
+                },
+                {
+                    "name": "sha256",
+                    "type": "varchar"
+                },
+                {
+                    "name": "sophos_pid",
+                    "type": "varchar"
+                },
+                {
+                    "name": "starting_integrity_level",
+                    "type": "int"
+                },
+                {
+                    "name": "starting_integrity_level_name",
+                    "type": "varchar"
+                },
+                {
+                    "name": "subcategory",
+                    "type": "varchar"
+                },
+                {
+                    "name": "time",
+                    "type": "bigint"
+                },
+                {
+                    "name": "user_sid",
+                    "type": "varchar"
+                },
+                {
+                    "name": "username",
+                    "type": "varchar"
+                },
+                {
+                    "name": "company_name",
+                    "type": "varchar"
+                },
+                {
+                    "name": "file_description",
+                    "type": "varchar"
+                },
+                {
+                    "name": "file_version",
+                    "type": "varchar"
+                },
+                {
+                    "name": "original_filename",
+                    "type": "varchar"
+                },
+                {
+                    "name": "is_process_file_signed",
+                    "type": "varchar"
+                },
+                {
+                    "name": "local_rep_data",
+                    "type": "varchar"
+                },
+                {
+                    "name": "product_name",
+                    "type": "varchar"
+                },
+                {
+                    "name": "stream_ingest_date",
+                    "type": "varchar"
+                },
+                {
+                    "name": "ingestion_timestamp",
+                    "type": "timestamp"
+                },
+                {
+                    "name": "message_identifier",
+                    "type": "varchar"
+                },
+                {
+                    "name": "record_identifier",
+                    "type": "varchar"
+                },
+                {
+                    "name": "event_time",
+                    "type": "timestamp"
+                },
+                {
+                    "name": "folded",
+                    "type": "int"
+                },
+                {
+                    "name": "boot_time",
+                    "type": "bigint"
+                },
+                {
+                    "name": "hostname",
+                    "type": "varchar"
+                },
+                {
+                    "name": "os_name",
+                    "type": "varchar"
+                },
+                {
+                    "name": "os_platform",
+                    "type": "varchar"
+                },
+                {
+                    "name": "os_version",
+                    "type": "varchar"
+                },
+                {
+                    "name": "public_ip",
+                    "type": "varchar"
+                },
+                {
+                    "name": "endpoint_type",
+                    "type": "varchar"
+                },
+                {
+                    "name": "domain_controller",
+                    "type": "varchar"
+                },
+                {
+                    "name": "customer_id",
+                    "type": "varchar"
+                },
+                {
+                    "name": "endpoint_id",
+                    "type": "varchar"
+                },
+                {
+                    "name": "internal_customer_id",
+                    "type": "varchar"
+                },
+                {
+                    "name": "timestamp_nano",
+                    "type": "bigint"
+                }
+            ]
+        },
+        {
+            "viewName": "scheduled_task_activity",
+            "tableName": "symlink_xdr_ext_data",
+            "originalSql": "select category,sophos_pid,subcategory,task_content,task_name,time,username,stream_ingest_date,ingestion_timestamp, message_identifier, record_identifier, unix_time as event_time, folded, meta_boot_time as boot_time, meta_hostname as hostname, meta_os_name as os_name, meta_os_platform as os_platform, meta_os_version as os_version, meta_public_ip as public_ip, meta_endpoint_type as endpoint_type, meta_domain_controller as domain_controller, customer_id, endpoint_id, internal_customer_id, timestamp_nano from symlink_xdr_ext_data where query_name='scheduled_task_activity'",
+            "columns": [
+                {
+                    "name": "category",
+                    "type": "varchar"
+                },
+                {
+                    "name": "sophos_pid",
+                    "type": "varchar"
+                },
+                {
+                    "name": "subcategory",
+                    "type": "varchar"
+                },
+                {
+                    "name": "task_content",
+                    "type": "varchar"
+                },
+                {
+                    "name": "task_name",
+                    "type": "varchar"
+                },
+                {
+                    "name": "time",
+                    "type": "bigint"
+                },
+                {
+                    "name": "username",
+                    "type": "varchar"
+                },
+                {
+                    "name": "stream_ingest_date",
+                    "type": "varchar"
+                },
+                {
+                    "name": "ingestion_timestamp",
+                    "type": "timestamp"
+                },
+                {
+                    "name": "message_identifier",
+                    "type": "varchar"
+                },
+                {
+                    "name": "record_identifier",
+                    "type": "varchar"
+                },
+                {
+                    "name": "event_time",
+                    "type": "timestamp"
+                },
+                {
+                    "name": "folded",
+                    "type": "int"
+                },
+                {
+                    "name": "boot_time",
+                    "type": "bigint"
+                },
+                {
+                    "name": "hostname",
+                    "type": "varchar"
+                },
+                {
+                    "name": "os_name",
+                    "type": "varchar"
+                },
+                {
+                    "name": "os_platform",
+                    "type": "varchar"
+                },
+                {
+                    "name": "os_version",
+                    "type": "varchar"
+                },
+                {
+                    "name": "public_ip",
+                    "type": "varchar"
+                },
+                {
+                    "name": "endpoint_type",
+                    "type": "varchar"
+                },
+                {
+                    "name": "domain_controller",
+                    "type": "varchar"
+                },
+                {
+                    "name": "customer_id",
+                    "type": "varchar"
+                },
+                {
+                    "name": "endpoint_id",
+                    "type": "varchar"
+                },
+                {
+                    "name": "internal_customer_id",
+                    "type": "varchar"
+                },
+                {
+                    "name": "timestamp_nano",
+                    "type": "bigint"
+                }
+            ]
+        },
+        {
+            "viewName": "service_activity",
+            "tableName": "symlink_xdr_ext_data",
+            "originalSql": "select category,new_service_value,parent_sophos_pid,service_account,service_name,service_path,service_start_type,service_start_type_name,service_type_enum,service_type_name,sophos_pid,subcategory,time,user_domain,user_sid,username,stream_ingest_date,ingestion_timestamp, message_identifier, record_identifier, unix_time as event_time, folded, meta_boot_time as boot_time, meta_hostname as hostname, meta_os_name as os_name, meta_os_platform as os_platform, meta_os_version as os_version, meta_public_ip as public_ip, meta_endpoint_type as endpoint_type, meta_domain_controller as domain_controller, customer_id, endpoint_id, internal_customer_id, timestamp_nano from symlink_xdr_ext_data where query_name='service_activity'",
+            "columns": [
+                {
+                    "name": "category",
+                    "type": "varchar"
+                },
+                {
+                    "name": "new_service_value",
+                    "type": "varchar"
+                },
+                {
+                    "name": "parent_sophos_pid",
+                    "type": "varchar"
+                },
+                {
+                    "name": "service_account",
+                    "type": "varchar"
+                },
+                {
+                    "name": "service_name",
+                    "type": "varchar"
+                },
+                {
+                    "name": "service_path",
+                    "type": "varchar"
+                },
+                {
+                    "name": "service_start_type",
+                    "type": "int"
+                },
+                {
+                    "name": "service_start_type_name",
+                    "type": "varchar"
+                },
+                {
+                    "name": "service_type_enum",
+                    "type": "int"
+                },
+                {
+                    "name": "service_type_name",
+                    "type": "varchar"
+                },
+                {
+                    "name": "sophos_pid",
+                    "type": "varchar"
+                },
+                {
+                    "name": "subcategory",
+                    "type": "varchar"
+                },
+                {
+                    "name": "time",
+                    "type": "bigint"
+                },
+                {
+                    "name": "user_domain",
+                    "type": "varchar"
+                },
+                {
+                    "name": "user_sid",
+                    "type": "varchar"
+                },
+                {
+                    "name": "username",
+                    "type": "varchar"
+                },
+                {
+                    "name": "stream_ingest_date",
+                    "type": "varchar"
+                },
+                {
+                    "name": "ingestion_timestamp",
+                    "type": "timestamp"
+                },
+                {
+                    "name": "message_identifier",
+                    "type": "varchar"
+                },
+                {
+                    "name": "record_identifier",
+                    "type": "varchar"
+                },
+                {
+                    "name": "event_time",
+                    "type": "timestamp"
+                },
+                {
+                    "name": "folded",
+                    "type": "int"
+                },
+                {
+                    "name": "boot_time",
+                    "type": "bigint"
+                },
+                {
+                    "name": "hostname",
+                    "type": "varchar"
+                },
+                {
+                    "name": "os_name",
+                    "type": "varchar"
+                },
+                {
+                    "name": "os_platform",
+                    "type": "varchar"
+                },
+                {
+                    "name": "os_version",
+                    "type": "varchar"
+                },
+                {
+                    "name": "public_ip",
+                    "type": "varchar"
+                },
+                {
+                    "name": "endpoint_type",
+                    "type": "varchar"
+                },
+                {
+                    "name": "domain_controller",
+                    "type": "varchar"
+                },
+                {
+                    "name": "customer_id",
+                    "type": "varchar"
+                },
+                {
+                    "name": "endpoint_id",
+                    "type": "varchar"
+                },
+                {
+                    "name": "internal_customer_id",
+                    "type": "varchar"
+                },
+                {
+                    "name": "timestamp_nano",
+                    "type": "bigint"
+                }
+            ]
+        },
+        {
+            "viewName": "url_activity",
+            "tableName": "symlink_xdr_ext_data",
+            "originalSql": "select category,sophos_pid,sophos_tid,subcategory,time,url,stream_ingest_date,ingestion_timestamp, message_identifier, record_identifier, unix_time as event_time, folded, meta_boot_time as boot_time, meta_hostname as hostname, meta_os_name as os_name, meta_os_platform as os_platform, meta_os_version as os_version, meta_public_ip as public_ip, meta_endpoint_type as endpoint_type, meta_domain_controller as domain_controller, customer_id, endpoint_id, internal_customer_id, timestamp_nano from symlink_xdr_ext_data where query_name IN ('url_activity','sophos_url_activity_windows')",
+            "columns": [
+                {
+                    "name": "category",
+                    "type": "varchar"
+                },
+                {
+                    "name": "sophos_pid",
+                    "type": "varchar"
+                },
+                {
+                    "name": "sophos_tid",
+                    "type": "varchar"
+                },
+                {
+                    "name": "subcategory",
+                    "type": "varchar"
+                },
+                {
+                    "name": "time",
+                    "type": "bigint"
+                },
+                {
+                    "name": "url",
+                    "type": "varchar"
+                },
+                {
+                    "name": "stream_ingest_date",
+                    "type": "varchar"
+                },
+                {
+                    "name": "ingestion_timestamp",
+                    "type": "timestamp"
+                },
+                {
+                    "name": "message_identifier",
+                    "type": "varchar"
+                },
+                {
+                    "name": "record_identifier",
+                    "type": "varchar"
+                },
+                {
+                    "name": "event_time",
+                    "type": "timestamp"
+                },
+                {
+                    "name": "folded",
+                    "type": "int"
+                },
+                {
+                    "name": "boot_time",
+                    "type": "bigint"
+                },
+                {
+                    "name": "hostname",
+                    "type": "varchar"
+                },
+                {
+                    "name": "os_name",
+                    "type": "varchar"
+                },
+                {
+                    "name": "os_platform",
+                    "type": "varchar"
+                },
+                {
+                    "name": "os_version",
+                    "type": "varchar"
+                },
+                {
+                    "name": "public_ip",
+                    "type": "varchar"
+                },
+                {
+                    "name": "endpoint_type",
+                    "type": "varchar"
+                },
+                {
+                    "name": "domain_controller",
+                    "type": "varchar"
+                },
+                {
+                    "name": "customer_id",
+                    "type": "varchar"
+                },
+                {
+                    "name": "endpoint_id",
+                    "type": "varchar"
+                },
+                {
+                    "name": "internal_customer_id",
+                    "type": "varchar"
+                },
+                {
+                    "name": "timestamp_nano",
+                    "type": "bigint"
+                }
+            ]
+        },
+        {
+            "viewName": "account_activity",
+            "tableName": "symlink_xdr_ext_data",
+            "originalSql": "select account_expires, allowed_to_delegate_to, category, display_name, home_directory, home_path, logon_hours, new_uac_value, old_uac_value, password_last_set, primary_group_id, privilege_list, profile_path, sam_account_name, sid_history, script_path, sophos_pid, subcategory, target_domain, target_sid, target_username, time, uac, user_domain, user_logon_id, user_parameters, user_principal_name, user_sid, user_workstations, username, stream_ingest_date,ingestion_timestamp, message_identifier, record_identifier, unix_time as event_time, folded, meta_boot_time as boot_time, meta_hostname as hostname, meta_os_name as os_name, meta_os_platform as os_platform, meta_os_version as os_version, meta_public_ip as public_ip, meta_endpoint_type as endpoint_type, meta_domain_controller as domain_controller, customer_id, endpoint_id, internal_customer_id, timestamp_nano from symlink_xdr_ext_data where query_name IN ('account_activity','user_events_linux')",
+            "columns": [
+                {
+                    "name": "account_expires",
+                    "type": "varchar"
+                },
+                {
+                    "name": "allowed_to_delegate_to",
+                    "type": "varchar"
+                },
+                {
+                    "name": "category",
+                    "type": "varchar"
+                },
+                {
+                    "name": "display_name",
+                    "type": "varchar"
+                },
+                {
+                    "name": "home_directory",
+                    "type": "varchar"
+                },
+                {
+                    "name": "home_path",
+                    "type": "varchar"
+                },
+                {
+                    "name": "logon_hours",
+                    "type": "varchar"
+                },
+                {
+                    "name": "new_uac_value",
+                    "type": "varchar"
+                },
+                {
+                    "name": "old_uac_value",
+                    "type": "varchar"
+                },
+                {
+                    "name": "password_last_set",
+                    "type": "varchar"
+                },
+                {
+                    "name": "primary_group_id",
+                    "type": "varchar"
+                },
+                {
+                    "name": "privilege_list",
+                    "type": "varchar"
+                },
+                {
+                    "name": "profile_path",
+                    "type": "varchar"
+                },
+                {
+                    "name": "sam_account_name",
+                    "type": "varchar"
+                },
+                {
+                    "name": "sid_history",
+                    "type": "varchar"
+                },
+                {
+                    "name": "script_path",
+                    "type": "varchar"
+                },
+                {
+                    "name": "sophos_pid",
+                    "type": "varchar"
+                },
+                {
+                    "name": "subcategory",
+                    "type": "varchar"
+                },
+                {
+                    "name": "target_domain",
+                    "type": "varchar"
+                },
+                {
+                    "name": "target_sid",
+                    "type": "varchar"
+                },
+                {
+                    "name": "target_username",
+                    "type": "varchar"
+                },
+                {
+                    "name": "time",
+                    "type": "bigint"
+                },
+                {
+                    "name": "uac",
+                    "type": "varchar"
+                },
+                {
+                    "name": "user_domain",
+                    "type": "varchar"
+                },
+                {
+                    "name": "user_logon_id",
+                    "type": "varchar"
+                },
+                {
+                    "name": "user_parameters",
+                    "type": "varchar"
+                },
+                {
+                    "name": "user_principal_name",
+                    "type": "varchar"
+                },
+                {
+                    "name": "user_sid",
+                    "type": "varchar"
+                },
+                {
+                    "name": "user_workstations",
+                    "type": "varchar"
+                },
+                {
+                    "name": "username",
+                    "type": "varchar"
+                },
+                {
+                    "name": "stream_ingest_date",
+                    "type": "varchar"
+                },
+                {
+                    "name": "ingestion_timestamp",
+                    "type": "timestamp"
+                },
+                {
+                    "name": "message_identifier",
+                    "type": "varchar"
+                },
+                {
+                    "name": "record_identifier",
+                    "type": "varchar"
+                },
+                {
+                    "name": "event_time",
+                    "type": "timestamp"
+                },
+                {
+                    "name": "folded",
+                    "type": "int"
+                },
+                {
+                    "name": "boot_time",
+                    "type": "bigint"
+                },
+                {
+                    "name": "hostname",
+                    "type": "varchar"
+                },
+                {
+                    "name": "os_name",
+                    "type": "varchar"
+                },
+                {
+                    "name": "os_platform",
+                    "type": "varchar"
+                },
+                {
+                    "name": "os_version",
+                    "type": "varchar"
+                },
+                {
+                    "name": "public_ip",
+                    "type": "varchar"
+                },
+                {
+                    "name": "endpoint_type",
+                    "type": "varchar"
+                },
+                {
+                    "name": "domain_controller",
+                    "type": "varchar"
+                },
+                {
+                    "name": "customer_id",
+                    "type": "varchar"
+                },
+                {
+                    "name": "endpoint_id",
+                    "type": "varchar"
+                },
+                {
+                    "name": "internal_customer_id",
+                    "type": "varchar"
+                },
+                {
+                    "name": "timestamp_nano",
+                    "type": "bigint"
+                }
+            ]
+        },
+        {
+            "viewName": "authentication_activity",
+            "tableName": "symlink_xdr_ext_data",
+            "originalSql": "select authentication_package, category, elevated_token, executing_sophos_pid, failure_reason, impersonation_level, key_length, lm_package, logon_guid, logon_hours, logon_id, logon_process, logon_type, process_path, remote_address, remote_port, restricted_admin_mode, sophos_pid, status, sub_status, subcategory, target_domain, target_linked_logon_id, target_logon_id, target_outbound_domain, target_outbound_username, target_sid, target_username, time, transmitted_services, user_domain, user_sid, username, virtual_account, workstation_name, stream_ingest_date, ingestion_timestamp, message_identifier, record_identifier, unix_time as event_time, folded, meta_boot_time as boot_time, meta_hostname as hostname, meta_os_name as os_name, meta_os_platform as os_platform, meta_os_version as os_version, meta_public_ip as public_ip, meta_endpoint_type as endpoint_type, meta_domain_controller as domain_controller, customer_id, endpoint_id, internal_customer_id, timestamp_nano from symlink_xdr_ext_data where query_name='authentication_activity'",
+            "columns": [
+                {
+                    "name": "authentication_package",
+                    "type": "varchar"
+                },
+                {
+                    "name": "category",
+                    "type": "varchar"
+                },
+                {
+                    "name": "elevated_token",
+                    "type": "varchar"
+                },
+                {
+                    "name": "executing_sophos_pid",
+                    "type": "varchar"
+                },
+                {
+                    "name": "failure_reason",
+                    "type": "varchar"
+                },
+                {
+                    "name": "impersonation_level",
+                    "type": "varchar"
+                },
+                {
+                    "name": "key_length",
+                    "type": "int"
+                },
+                {
+                    "name": "lm_package",
+                    "type": "varchar"
+                },
+                {
+                    "name": "logon_guid",
+                    "type": "varchar"
+                },
+                {
+                    "name": "logon_hours",
+                    "type": "varchar"
+                },
+                {
+                    "name": "logon_id",
+                    "type": "varchar"
+                },
+                {
+                    "name": "logon_process",
+                    "type": "varchar"
+                },
+                {
+                    "name": "logon_type",
+                    "type": "int"
+                },
+                {
+                    "name": "process_path",
+                    "type": "varchar"
+                },
+                {
+                    "name": "remote_address",
+                    "type": "varchar"
+                },
+                {
+                    "name": "remote_port",
+                    "type": "int"
+                },
+                {
+                    "name": "restricted_admin_mode",
+                    "type": "varchar"
+                },
+                {
+                    "name": "sophos_pid",
+                    "type": "varchar"
+                },
+                {
+                    "name": "status",
+                    "type": "varchar"
+                },
+                {
+                    "name": "sub_status",
+                    "type": "varchar"
+                },
+                {
+                    "name": "subcategory",
+                    "type": "varchar"
+                },
+                {
+                    "name": "target_domain",
+                    "type": "varchar"
+                },
+                {
+                    "name": "target_linked_logon_id",
+                    "type": "varchar"
+                },
+                {
+                    "name": "target_logon_id",
+                    "type": "varchar"
+                },
+                {
+                    "name": "target_outbound_domain",
+                    "type": "varchar"
+                },
+                {
+                    "name": "target_outbound_username",
+                    "type": "varchar"
+                },
+                {
+                    "name": "target_sid",
+                    "type": "varchar"
+                },
+                {
+                    "name": "target_username",
+                    "type": "varchar"
+                },
+                {
+                    "name": "time",
+                    "type": "bigint"
+                },
+                {
+                    "name": "transmitted_services",
+                    "type": "varchar"
+                },
+                {
+                    "name": "user_domain",
+                    "type": "varchar"
+                },
+                {
+                    "name": "user_sid",
+                    "type": "varchar"
+                },
+                {
+                    "name": "username",
+                    "type": "varchar"
+                },
+                {
+                    "name": "virtual_account",
+                    "type": "varchar"
+                },
+                {
+                    "name": "workstation_name",
+                    "type": "varchar"
+                },
+                {
+                    "name": "stream_ingest_date",
+                    "type": "varchar"
+                },
+                {
+                    "name": "ingestion_timestamp",
+                    "type": "timestamp"
+                },
+                {
+                    "name": "message_identifier",
+                    "type": "varchar"
+                },
+                {
+                    "name": "record_identifier",
+                    "type": "varchar"
+                },
+                {
+                    "name": "event_time",
+                    "type": "timestamp"
+                },
+                {
+                    "name": "folded",
+                    "type": "int"
+                },
+                {
+                    "name": "boot_time",
+                    "type": "bigint"
+                },
+                {
+                    "name": "hostname",
+                    "type": "varchar"
+                },
+                {
+                    "name": "os_name",
+                    "type": "varchar"
+                },
+                {
+                    "name": "os_platform",
+                    "type": "varchar"
+                },
+                {
+                    "name": "os_version",
+                    "type": "varchar"
+                },
+                {
+                    "name": "public_ip",
+                    "type": "varchar"
+                },
+                {
+                    "name": "endpoint_type",
+                    "type": "varchar"
+                },
+                {
+                    "name": "domain_controller",
+                    "type": "varchar"
+                },
+                {
+                    "name": "customer_id",
+                    "type": "varchar"
+                },
+                {
+                    "name": "endpoint_id",
+                    "type": "varchar"
+                },
+                {
+                    "name": "internal_customer_id",
+                    "type": "varchar"
+                },
+                {
+                    "name": "timestamp_nano",
+                    "type": "bigint"
+                }
+            ]
+        },
+        {
+            "viewName": "runtime_activity",
+            "tableName": "symlink_xdr_ext_data",
+            "originalSql": "select account_domain,account_name,account_sid,category,destination_domain_name,destination_ip,destination_port,destination_url,event_data,file,file_download_url,file_path,file_sha256,file_size,guid,mitre_ttps,parent_process_name,parent_process_path,parent_sophos_pid,primary_ttp,process_command_line,process_name,process_original_name,process_path,process_sha256,process_user_sid,protocol,reg_path,reg_value_data,reg_value_name,service_name,sophos_pid,source_ip,source_port,start_time,subcategory,target_file_path,target_process_command_line,target_process_name,target_process_path,target_process_sha256,target_sophos_pid,task_name,technique_summary,technique_type,technique_value,time, stream_ingest_date,ingestion_timestamp, message_identifier, record_identifier, unix_time as event_time, folded, meta_boot_time as boot_time, meta_hostname as hostname, meta_os_name as os_name, meta_os_platform as os_platform, meta_os_version as os_version, meta_public_ip as public_ip, meta_endpoint_type as endpoint_type, meta_domain_controller as domain_controller, customer_id, endpoint_id, internal_customer_id, timestamp_nano from symlink_xdr_ext_data where query_name IN ('runtime_activity','sophos_runtime_detections_linux')",
+            "columns": [
+                {
+                    "name": "account_domain",
+                    "type": "varchar"
+                },
+                {
+                    "name": "account_name",
+                    "type": "varchar"
+                },
+                {
+                    "name": "account_sid",
+                    "type": "varchar"
+                },
+                {
+                    "name": "category",
+                    "type": "varchar"
+                },
+                {
+                    "name": "destination_domain_name",
+                    "type": "varchar"
+                },
+                {
+                    "name": "destination_ip",
+                    "type": "varchar"
+                },
+                {
+                    "name": "destination_port",
+                    "type": "int"
+                },
+                {
+                    "name": "destination_url",
+                    "type": "varchar"
+                },
+                {
+                    "name": "event_data",
+                    "type": "varchar"
+                },
+                {
+                    "name": "file",
+                    "type": "varchar"
+                },
+                {
+                    "name": "file_download_url",
+                    "type": "varchar"
+                },
+                {
+                    "name": "file_path",
+                    "type": "varchar"
+                },
+                {
+                    "name": "file_sha256",
+                    "type": "varchar"
+                },
+                {
+                    "name": "file_size",
+                    "type": "bigint"
+                },
+                {
+                    "name": "guid",
+                    "type": "varchar"
+                },
+                {
+                    "name": "mitre_ttps",
+                    "type": "varchar"
+                },
+                {
+                    "name": "parent_process_name",
+                    "type": "varchar"
+                },
+                {
+                    "name": "parent_process_path",
+                    "type": "varchar"
+                },
+                {
+                    "name": "parent_sophos_pid",
+                    "type": "varchar"
+                },
+                {
+                    "name": "primary_ttp",
+                    "type": "varchar"
+                },
+                {
+                    "name": "process_command_line",
+                    "type": "varchar"
+                },
+                {
+                    "name": "process_name",
+                    "type": "varchar"
+                },
+                {
+                    "name": "process_original_name",
+                    "type": "varchar"
+                },
+                {
+                    "name": "process_path",
+                    "type": "varchar"
+                },
+                {
+                    "name": "process_sha256",
+                    "type": "varchar"
+                },
+                {
+                    "name": "process_user_sid",
+                    "type": "varchar"
+                },
+                {
+                    "name": "protocol",
+                    "type": "int"
+                },
+                {
+                    "name": "reg_path",
+                    "type": "varchar"
+                },
+                {
+                    "name": "reg_value_data",
+                    "type": "varchar"
+                },
+                {
+                    "name": "reg_value_name",
+                    "type": "varchar"
+                },
+                {
+                    "name": "service_name",
+                    "type": "varchar"
+                },
+                {
+                    "name": "sophos_pid",
+                    "type": "varchar"
+                },
+                {
+                    "name": "source_ip",
+                    "type": "varchar"
+                },
+                {
+                    "name": "source_port",
+                    "type": "int"
+                },
+                {
+                    "name": "start_time",
+                    "type": "bigint"
+                },
+                {
+                    "name": "subcategory",
+                    "type": "varchar"
+                },
+                {
+                    "name": "target_file_path",
+                    "type": "varchar"
+                },
+                {
+                    "name": "target_process_command_line",
+                    "type": "varchar"
+                },
+                {
+                    "name": "target_process_name",
+                    "type": "varchar"
+                },
+                {
+                    "name": "target_process_path",
+                    "type": "varchar"
+                },
+                {
+                    "name": "target_process_sha256",
+                    "type": "varchar"
+                },
+                {
+                    "name": "target_sophos_pid",
+                    "type": "varchar"
+                },
+                {
+                    "name": "task_name",
+                    "type": "varchar"
+                },
+                {
+                    "name": "technique_summary",
+                    "type": "varchar"
+                },
+                {
+                    "name": "technique_type",
+                    "type": "varchar"
+                },
+                {
+                    "name": "technique_value",
+                    "type": "varchar"
+                },
+                {
+                    "name": "time",
+                    "type": "bigint"
+                },
+                {
+                    "name": "stream_ingest_date",
+                    "type": "varchar"
+                },
+                {
+                    "name": "ingestion_timestamp",
+                    "type": "timestamp"
+                },
+                {
+                    "name": "message_identifier",
+                    "type": "varchar"
+                },
+                {
+                    "name": "record_identifier",
+                    "type": "varchar"
+                },
+                {
+                    "name": "event_time",
+                    "type": "timestamp"
+                },
+                {
+                    "name": "folded",
+                    "type": "int"
+                },
+                {
+                    "name": "boot_time",
+                    "type": "bigint"
+                },
+                {
+                    "name": "hostname",
+                    "type": "varchar"
+                },
+                {
+                    "name": "os_name",
+                    "type": "varchar"
+                },
+                {
+                    "name": "os_platform",
+                    "type": "varchar"
+                },
+                {
+                    "name": "os_version",
+                    "type": "varchar"
+                },
+                {
+                    "name": "public_ip",
+                    "type": "varchar"
+                },
+                {
+                    "name": "endpoint_type",
+                    "type": "varchar"
+                },
+                {
+                    "name": "domain_controller",
+                    "type": "varchar"
+                },
+                {
+                    "name": "customer_id",
+                    "type": "varchar"
+                },
+                {
+                    "name": "endpoint_id",
+                    "type": "varchar"
+                },
+                {
+                    "name": "internal_customer_id",
+                    "type": "varchar"
+                },
+                {
+                    "name": "timestamp_nano",
+                    "type": "bigint"
+                }
+            ]
+        }
+    ]
+}
